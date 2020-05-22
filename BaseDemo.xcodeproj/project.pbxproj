@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		023D67547F04ED513FE52EE2 /* Pods_BaseDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55062E054902B4C3A192429A /* Pods_BaseDemo.framework */; };
 		C25AA553247633AD0025F203 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C25AA552247633AD0025F203 /* AppDelegate.m */; };
 		C25AA556247633AD0025F203 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C25AA555247633AD0025F203 /* SceneDelegate.m */; };
 		C25AA559247633AD0025F203 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25AA558247633AD0025F203 /* ViewController.m */; };
@@ -32,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		55062E054902B4C3A192429A /* Pods_BaseDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76BDF0608B52157BCBF1E9BF /* Pods-BaseDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseDemo.release.xcconfig"; path = "Target Support Files/Pods-BaseDemo/Pods-BaseDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C25AA54E247633AD0025F203 /* BaseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C25AA551247633AD0025F203 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C25AA552247633AD0025F203 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -77,6 +80,7 @@
 		C25AA596247658FE0025F203 /* BYNetHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYNetHelper.m; sourceTree = "<group>"; };
 		C25AA597247658FE0025F203 /* BYRequestLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BYRequestLog.h; sourceTree = "<group>"; };
 		C25AA598247658FE0025F203 /* BYNetConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BYNetConfig.m; sourceTree = "<group>"; };
+		E2B556A9E8987A8C4E6EF0E7 /* Pods-BaseDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseDemo.debug.xcconfig"; path = "Target Support Files/Pods-BaseDemo/Pods-BaseDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,17 +88,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				023D67547F04ED513FE52EE2 /* Pods_BaseDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29CB7F3E5A8ACE96A4864ADE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2B556A9E8987A8C4E6EF0E7 /* Pods-BaseDemo.debug.xcconfig */,
+				76BDF0608B52157BCBF1E9BF /* Pods-BaseDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A5D4023FA8347486DDC0629C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55062E054902B4C3A192429A /* Pods_BaseDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C25AA545247633AD0025F203 = {
 			isa = PBXGroup;
 			children = (
 				C25AA550247633AD0025F203 /* BaseDemo */,
 				C25AA54F247633AD0025F203 /* Products */,
+				29CB7F3E5A8ACE96A4864ADE /* Pods */,
+				A5D4023FA8347486DDC0629C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,18 +197,18 @@
 		C25AA58C247658FE0025F203 /* BYNetHelper */ = {
 			isa = PBXGroup;
 			children = (
-				C25AA58D247658FE0025F203 /* BYNetCache.h */,
-				C25AA58E247658FE0025F203 /* BYNetManager.h */,
-				C25AA58F247658FE0025F203 /* BYNetMacro.h */,
-				C25AA590247658FE0025F203 /* BYNetHelper.h */,
 				C25AA591247658FE0025F203 /* BYRequest.h */,
+				C25AA58F247658FE0025F203 /* BYNetMacro.h */,
 				C25AA592247658FE0025F203 /* BYNetConfig.h */,
-				C25AA593247658FE0025F203 /* BYRequestLog.m */,
+				C25AA598247658FE0025F203 /* BYNetConfig.m */,
+				C25AA58E247658FE0025F203 /* BYNetManager.h */,
 				C25AA594247658FE0025F203 /* BYNetManager.m */,
+				C25AA58D247658FE0025F203 /* BYNetCache.h */,
 				C25AA595247658FE0025F203 /* BYNetCache.m */,
+				C25AA590247658FE0025F203 /* BYNetHelper.h */,
 				C25AA596247658FE0025F203 /* BYNetHelper.m */,
 				C25AA597247658FE0025F203 /* BYRequestLog.h */,
-				C25AA598247658FE0025F203 /* BYNetConfig.m */,
+				C25AA593247658FE0025F203 /* BYRequestLog.m */,
 			);
 			path = BYNetHelper;
 			sourceTree = "<group>";
@@ -196,9 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C25AA567247633AF0025F203 /* Build configuration list for PBXNativeTarget "BaseDemo" */;
 			buildPhases = (
+				1A2C95A6FBED2E86802D0D76 /* [CP] Check Pods Manifest.lock */,
 				C25AA54A247633AD0025F203 /* Sources */,
 				C25AA54B247633AD0025F203 /* Frameworks */,
 				C25AA54C247633AD0025F203 /* Resources */,
+				E9345BBDAFFDB151A4B23634 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +279,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A2C95A6FBED2E86802D0D76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BaseDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9345BBDAFFDB151A4B23634 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BaseDemo/Pods-BaseDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BaseDemo/Pods-BaseDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BaseDemo/Pods-BaseDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C25AA54A247633AD0025F203 /* Sources */ = {
@@ -415,9 +483,11 @@
 		};
 		C25AA568247633AF0025F203 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2B556A9E8987A8C4E6EF0E7 /* Pods-BaseDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 787U8XY7S2;
 				INFOPLIST_FILE = BaseDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -431,9 +501,11 @@
 		};
 		C25AA569247633AF0025F203 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76BDF0608B52157BCBF1E9BF /* Pods-BaseDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 787U8XY7S2;
 				INFOPLIST_FILE = BaseDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
